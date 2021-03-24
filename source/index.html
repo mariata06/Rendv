@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Description" content="главная новостной сайт о недвижимости">
+  <title>Главная Новости Pro.Недвижимость</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="page-header__navigation navigation container">
+        <div class="navigation__logo">
+          <picture>
+            <source srcset="img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x" media="(min-width: 1440px)">
+            <img src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" alt="Лого Rendv">
+          </picture>
+        </div>
+        <ul class="navigation__menu">
+          <li>
+            <a href="#">Недвижимость</a>
+          </li>
+          <li>
+            <a href="#">Финансы</a>
+          </li>
+          <li>
+            <a href="#">Рейтинг компаний</a>
+          </li>
+          <li>
+            <a href="#">Брижа услуг</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Блоги</a>
+          </li>
+          <li>
+            <a href="#">Мнение эксперта</a>
+          </li>
+        </ul>
+        <div class="navigation__buttons">
+          <button type="button" class="navigation__button button">
+            <svg class="navigation__button-icon" width="12" height="12">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+            Разместить объявление</button>
+          <button type="button" class="navigation__button button">Вход и регистрация</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main container">
+      <section class="news">
+        <h1>Новости Pro.Недвижимость</h1>
+        <div class="news__wrapper">
+          <article class="news__article article">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/ice-arena-desktop@1x.webp 1x, img/ice-arena-desktop@2x.webp 2x">
+                <source srcset="img/ice-arena-desktop@1x.png 1x, img/ice-arena-desktop@2x.png 2x"
+                  media="(min-width: 1440px)">
+                <img src="img/ice-arena-mobile@1x.png" srcset="img/ice-arena-mobile@2x.png 2x" alt="Сквер возле Ледовой арены">
+              </picture>
+            </figure>
+            <figcaption>
+              <span>Новости Pro.Недвижимость</span>
+              <h3>У новой ледовой арены в Новосибирске разобьют сквер</h3>
+            </figcaption>
+          </article>
+
+          <article class="news__article article">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/mayday-square-desktop@1x.webp 1x, img/mayday-square-desktop@2x.webp 2x">
+                <source srcset="img/mayday-square-desktop@1x.png 1x, img/mayday-square-desktop@2x.png 2x"
+                  media="(min-width: 1440px)">
+                <img src="img/mayday-square-mobile@1x.png" srcset="img/mayday-square-mobile@2x.png 2x" alt="Фото провалившегося тротуара">
+              </picture>
+            </figure>
+            <figcaption>
+              <span>Новости Pro.Недвижимость</span>
+              <h3>У Первомайского сквера в Новосибирске провалился тротуар: его чинили 6 месяцев подряд</h3>
+            </figcaption>
+          </article>
+
+          <article class="news__article article article--ecotourism">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/ecotourism-desktop@1x.webp 1x, img/ecotourism-desktop@2x.webp 2x">
+                <source srcset="img/ecotourism-desktop@1x.png 1x, img/ecotourism-desktop@2x.png 2x"
+                  media="(min-width: 1440px)">
+                <img src="img/ecotourism-mobile@1x.png" srcset="img/ecotourism-mobile@2x.png 2x" alt="Вебинары об экотуризме">
+              </picture>
+            </figure>
+            <figcaption>
+              <span>Новости Pro.Недвижимость</span>
+              <h3>В России запустили серию бесплатных вебинаров по экотуризму</h3>
+            </figcaption>
+          </article>
+
+          <article class="news__article article">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/vtb-desktop@1x.webp 1x, img/vtb-desktop@2x.webp 2x">
+                <source srcset="img/vtb-desktop@1x.png 1x, img/vtb-desktop@2x.png 2x"
+                  media="(min-width: 1440px)">
+                <img src="img/vtb-mobile@1x.png" srcset="img/vtb-mobile@2x.png 2x" alt="Новость ВТБ банк">
+              </picture>
+            </figure>
+            <figcaption>
+              <span>Новости Pro.Недвижимость</span>
+              <h3>ВТБ снизил до 15 % первоначальный взнос по ипотеке для семей с детьми</h3>
+            </figcaption>
+          </article>
+
+          <article class="news__article article">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/centralbank-desktop@1x.webp 1x, img/centralbank-desktop@2x.webp 2x">
+                <source srcset="img/centralbank-desktop@1x.png 1x, img/centralbank-desktop@2x.png 2x"
+                  media="(min-width: 1440px)">
+                <img src="img/centralbank-mobile@1x.png" srcset="img/centralbank-mobile@2x.png 2x" alt="Новость Центробанка">
+              </picture>
+            </figure>
+            <figcaption>
+              <span>Новости Pro.Недвижимость</span>
+              <h3>Центробанк порекомендовал банкам и МФО не выселять должников до конца года</h3>
+            </figcaption>
+          </article>
+
+          <article class="news__article article article--bridge">
+            <figure>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/obriver-bridge-desktop@1x.webp 1x, img/obriver-bridge-desktop@2x.webp 2x">
+                <source srcset="img/obriver-bridge-desktop@1x.png 1x, img/obriver-bridge-desktop@2x.png 2x"
+                  media="(min-width: 1440px)">
+                <img src="img/obriver-bridge-mobile@1x.png" srcset="img/obriver-bridge-mobile@2x.png 2x" alt="Мост реки Обь">
+              </picture>
+            </figure>
+            <figcaption>
+              <span>Новости Pro.Недвижимость</span>
+              <h3>Основную конструкцию четвертого моста через Обь начнут строить в 2020 году</h3>
+            </figcaption>
+          </article>
+        </div>
+      </section>
+
+      <section class="articles">
+        <h3>Статьи</h3>
+        <span>Новости Pro.Недвижимость</span>
+        <ul>
+          <li><a href="#">Пресс-релизы</a></li>
+          <li><a href="#">Антикризис</a></li>
+          <li><a href="#">Новостройки</a></li>
+          <li><a href="#">Вторичка</a></li>
+          <li><a href="#">Загородная</a></li>
+          <li><a href="#">Коммерческая</a></li>
+          <li><a href="#">Аренда</a></li>
+          <li><a href="#">Ипотека</a></li>
+          <li><a href="#">Дизайн и ремонт</a></li>
+          <li><a href="#">Город</a></li>
+          <li><a href="#">Мнение эксперта</a></li>
+          <li><a href="#">Интервью</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">
+            <svg class="articles__button-icon" width="16" height="18">
+              <use xlink:href="img/sprite.svg#icon-user"></use>
+            </svg>
+            Блог</a></li>
+          <li><a href="#">
+            <svg class="articles__button-icon" width="17" height="18">
+              <use xlink:href="img/sprite.svg#icon-review"></use>
+            </svg>
+            Отзывы</a></li>
+          <li><a href="#">
+            <svg class="articles__button-icon" width="17" height="10">
+              <use xlink:href="img/sprite.svg#icon-rate"></use>
+            </svg>
+            Рейтинг авторов</a></li>
+          <li><a href="#">
+            <svg class="articles__button-icon" width="17" height="18">
+              <use xlink:href="img/sprite.svg#icon-video"></use>
+            </svg>
+            Видео</a></li>
+          <li><a href="#">
+            <svg class="articles__button-icon" width="17" height="17">
+              <use xlink:href="img/sprite.svg#icon-question"></use>
+            </svg>
+            Вопросы</a></li>
+        </ul>
+      </section>
+
+      <section class="popular-articles">
+        <form action="https://echo.htmlacademy.ru">
+          <label for="site-search"></label>
+          <svg class="navigation__button-icon" width="17" height="18">
+            <use xlink:href="img/sprite.svg#icon-search"></use>
+          </svg>
+          <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Поиск">
+          <button type="submit">Search</button>
+        </form>
+        <div class="">
+
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+</html>

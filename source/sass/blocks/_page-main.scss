@@ -1,0 +1,12 @@
+.page-main {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 310px 353px 353px 420px;
+    grid-template-areas:
+      "articles news news popularnews"
+      "articles news news popularnews"
+      "articles news news popularnews"
+      "articles pagination pagination popularnews";
+    gap: 30px;
+  }
+}

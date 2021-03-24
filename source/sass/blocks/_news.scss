@@ -1,0 +1,30 @@
+.news {
+  background-color: $white-grey;
+
+  h1 {
+    //background-color: green;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    width: 100%;
+    display: block;
+  }
+
+  figcaption {
+    padding: 20px;
+  }
+
+  grid-area: news;
+
+  figure {
+    margin: 0;
+  }
+}
+
+.news__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 353px 353px;
+  gap: 30px;
+}

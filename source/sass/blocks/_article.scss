@@ -1,0 +1,6 @@
+.article {
+  &--ecotourism,
+  &--bridge {
+    grid-column: 1 / 3;
+  }
+}

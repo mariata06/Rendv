@@ -1,0 +1,12 @@
+.page-header {
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: $white;
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    //width: 1530px;
+    //padding: 0 40px;
+  }
+}

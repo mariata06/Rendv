@@ -1,0 +1,8 @@
+.page-wrapper {
+  width: 320px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 1920px;
+  }
+}
