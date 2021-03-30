@@ -1,11 +1,13 @@
 .button {
   border: none;
   outline: none;
+  padding: 0;
   background-color: transparent;
   cursor: pointer;
+  font-family: "roboto", "Arial", sans-serif;
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }

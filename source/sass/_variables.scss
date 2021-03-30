@@ -1,12 +1,15 @@
 //COLOR VARIABLES
-$white-grey: #ececec;
+//$white-grey: #ececec;
+$white-grey: #f8f8f8;
 $dark: #181818;  // основной цвет шрифта
 $white: #ffffff; //один из основных цветов фона
 $green: #7ab764; // цвет кнопок
 $light-green: #def1d7; //цвет кнопок
 $blue: #586eb6; // цвет кнопок
 $light-grey: #f4f4f4; // цвет футера
-$grey: #9e9e9e; //цвет текста в placeholder
+$grey: #9e9e9e; //цвет текста в placeholder и комментария
+$grey-medium: #ececec;
+$black: #000000;
 
 
 $desktop-width: 1440px;  // (приставка max-desktop-width - максимум пишем когда идем от desktop к mobile (1920px - 320px;)
@@ -25,6 +28,7 @@ $font-10: 10px;
 $font-12: 12px;
 $font-13: 13px;
 $font-14: 14px;
+$font-15: 15px;
 $font-16: 16px;
 $font-18: 18px;
 $font-20: 20px;
@@ -53,6 +57,7 @@ $line-height-19: 19px;
 $line-height-20: 20px;
 $line-height-21: 21px;
 $line-height-22: 22px;
+$line-height-23: 23px;
 $line-height-24: 24px;
 $line-height-25: 25px;
 $line-height-27: 27px;

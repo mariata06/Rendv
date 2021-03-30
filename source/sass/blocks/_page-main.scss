@@ -1,12 +1,23 @@
 .page-main {
+  /*
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 310px 353px 353px 420px;
     grid-template-areas:
-      "articles news news popularnews"
-      "articles news news popularnews"
-      "articles news news popularnews"
-      "articles pagination pagination popularnews";
+      "articles news news asidenews"
+      ".        news news ."
+      ".        news news ."
+      ".        news news ."
+      ".        pagination pagination .";
     gap: 30px;
+    padding-top: 30px;
+  }
+  */
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 310px 740px 420px;
+    grid-template-areas: "articles news asidenews";
+    gap: 30px;
+    padding-top: 30px;
   }
 }

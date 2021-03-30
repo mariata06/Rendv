@@ -1,6 +1,78 @@
 .article {
-  &--ecotourism,
-  &--bridge {
-    grid-column: 1 / 3;
+  background-color: $white;
+  border-radius: 10px;
+  border: 1px solid $grey-medium;
+  width: 353px;
+  margin-bottom: 30px;
+
+  figure {
+    margin: 0;
+    height: 100%;
+    display: block;
+  }
+
+  figcaption {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  figcaption p {
+    color: $blue;
+    line-height: 23px;
+  }
+
+  figcaption h3 {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    min-height: 81px;
+    margin-bottom: 24px;
+  }
+
+  figcaption time {
+    color: $grey;
+  }
+}
+
+.article--wide {
+  width: 100%;
+  border: none;
+
+  .article__comment {
+    width: 180px;
+  }
+
+  figure {
+    height: 100%;
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    align-content: flex-end;
+  }
+
+  figcaption p {
+    color: $white;
+    margin: 0;
+  }
+
+  figcaption h3 {
+    min-height: unset;
+    margin: 0;
+    color: $white;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  figcaption time {
+    color: $grey;
   }
 }

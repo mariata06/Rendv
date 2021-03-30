@@ -1,0 +1,65 @@
+.form {
+  display: block;
+
+  &--search {
+    padding: 18px 30px;
+    border: 1px solid $grey-medium;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    label {
+      display: flex;
+      align-items: center;
+    }
+
+    input {
+      outline: none;
+      width: 100%;
+      border: 1px solid transparent;
+      font-size: 15px;
+      line-height: 18px;
+      font-weight: 400;
+      font-family: "roboto", "Arial", sans-serif;
+
+      &:focus {
+        border: 1px solid $grey-medium;
+      }
+    }
+  }
+
+  &--mailing {
+    label {
+      width: 100%;
+    }
+
+    input {
+      outline: none;
+      width: 100%;
+      border: 1px solid $grey-medium;
+      padding: 11px 14px;
+      border-radius: 5px;
+      font-size: 15px;
+      line-height: 23px;
+      font-weight: 400;
+      font-family: "roboto", "Arial", sans-serif;
+      margin-bottom: 15px;
+    }
+
+    button {
+      @include button($font-15, $line-height-23, $medium, $white);
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: $blue;
+      color: $white;
+      border-radius: 5px;
+    }
+  }
+
+  svg {
+    margin-right: 15px;
+  }
+}

@@ -1,3 +1,53 @@
 .articles {
   grid-area: articles;
+  padding: 20px;
+  border: 1px solid $grey-medium;
+  //border: 1px solid green;
+  border-radius: 10px;
+  align-self: start;
+  width: 190px;
+  margin-left: auto;
+
+  ul {
+    @include list-reset;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 39px;
+    color: $blue;
+  }
+
+  span {
+    color: $blue;
+    line-height: 23px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  a {
+    line-height: 23px;
+    color: $dark;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      color: $blue;
+
+      svg {
+        stroke: $blue;
+      }
+    }
+  }
+
+  svg {
+    fill: $white;
+    stroke: $dark;
+    margin-right: 15px;
+  }
 }

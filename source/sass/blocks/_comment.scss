@@ -1,0 +1,19 @@
+.comment {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  span {
+    color: $grey;
+    margin-left: auto;
+    display: block;
+    position: relative;
+
+    &::before {
+      content: url("../img/icon-comment.svg");
+      display: block;
+      position: absolute;
+      left: -30px;
+    }
+  }
+}
