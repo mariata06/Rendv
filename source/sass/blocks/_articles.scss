@@ -2,10 +2,11 @@
   grid-area: articles;
   padding: 20px;
   border: 1px solid $grey-medium;
+  background-color: $white;
   //border: 1px solid green;
   border-radius: 10px;
   align-self: start;
-  width: 190px;
+  width: 192px;
   margin-left: auto;
 
   ul {
@@ -30,7 +31,7 @@
   }
 
   a {
-    line-height: 23px;
+    //line-height: 23px;
     color: $dark;
     display: flex;
     align-items: center;
@@ -41,6 +42,7 @@
 
       svg {
         stroke: $blue;
+        //fill: $blue;
       }
     }
   }
@@ -48,6 +50,6 @@
   svg {
     fill: $white;
     stroke: $dark;
-    margin-right: 15px;
+    margin-right: 14px;
   }
 }

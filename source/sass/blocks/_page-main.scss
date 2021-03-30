@@ -15,9 +15,21 @@
   */
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 310px 740px 420px;
-    grid-template-areas: "articles news asidenews";
+    grid-template-columns: 310px 353px 353px 420px;
+    grid-template-areas: ". title title ."
+      "articles news news asidenews";
     gap: 30px;
     padding-top: 30px;
+  }
+
+  h1 {
+    grid-area: title;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    width: 100%;
+    display: block;
+    margin-bottom: 11px;
   }
 }

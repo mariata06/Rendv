@@ -1,0 +1,16 @@
+.footer-navigation {
+  display: grid;
+  grid-template-columns: 260px 1010px 330px;
+  grid-template-areas: "logo menu social";
+  align-items: center;
+  padding-top: 108px;
+  padding-bottom: 43px;
+}
+
+.footer-navigation__logo {
+  grid-area: logo;
+}
+
+.footer-navigation__social {
+  grid-area: social;
+}

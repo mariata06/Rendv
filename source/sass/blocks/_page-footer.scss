@@ -1,0 +1,10 @@
+.page-footer {
+  min-width: 320px;
+  margin: 0 auto;
+  //background-color: $white;
+  //position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+  }
+}

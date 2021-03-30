@@ -1,0 +1,29 @@
+.copyright {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  background-color: $light-grey;
+}
+
+.copyright__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__disclaimer {
+  width: 620px;
+  margin: 0;
+}
+
+.copyright__copyright {
+  width: 284px;
+  text-align: right;
+
+  p {
+    margin: 0;
+  }
+
+  p:first-child {
+    margin-bottom: 10px;
+  }
+}

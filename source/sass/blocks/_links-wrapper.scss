@@ -1,0 +1,31 @@
+.links-wrapper {
+  display: grid;
+  grid-template-columns: 360px 290px 260px 360px 328px;
+  padding-top: 31px;
+  padding-bottom: 40px;
+}
+
+.links-wrapper__list {
+  @include list-reset;
+
+  a {
+    color: $dark;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  li:first-of-type {
+    margin-bottom: 33px;
+
+    a {
+      font-weight: 500;
+    }
+  }
+}

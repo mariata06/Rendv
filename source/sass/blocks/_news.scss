@@ -1,16 +1,5 @@
 .news {
   background-color: $white-grey;
-
-  h1 {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 36px;
-    margin: 0;
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-
   grid-area: news;
 }
 
