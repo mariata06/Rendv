@@ -2,7 +2,7 @@
   display: block;
 
   &--search {
-    padding: 18px 30px;
+    padding: 25px 30px;
     border: 1px solid $grey-medium;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -17,17 +17,26 @@
     }
 
     input {
+      @include text($font-15, $line-height-18, $regular);
+      font-family: "roboto", "Arial", sans-serif;
       outline: none;
       width: 100%;
       background-color: transparent;
       border: 1px solid transparent;
-      font-size: 15px;
-      line-height: 18px;
-      font-weight: 400;
-      font-family: "roboto", "Arial", sans-serif;
 
       &:focus {
         border: 1px solid $grey-medium;
+      }
+    }
+
+    svg {
+      transform: scale(0.7);
+      margin-right: 15px;
+      stroke: $grey;
+
+      @media (min-width: $desktop-width) {
+        transform: scale(1);
+        stroke: $dark;
       }
     }
   }
@@ -40,15 +49,13 @@
     }
 
     input {
+      @include text($font-15, $line-height-23, $regular);
+      font-family: "roboto", "Arial", sans-serif;
       outline: none;
       width: 100%;
       border: 1px solid $grey-medium;
       padding: 11px 14px;
       border-radius: 5px;
-      font-size: 15px;
-      line-height: 23px;
-      font-weight: 400;
-      font-family: "roboto", "Arial", sans-serif;
       margin-bottom: 15px;
     }
 
@@ -58,12 +65,7 @@
       padding-top: 10px;
       padding-bottom: 10px;
       background-color: $blue;
-      color: $white;
       border-radius: 5px;
     }
-  }
-
-  svg {
-    margin-right: 15px;
   }
 }

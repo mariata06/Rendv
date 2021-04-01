@@ -12,7 +12,8 @@ $grey-medium: #ececec;
 $black: #000000;
 
 
-$desktop-width: 1440px;  // (приставка max-desktop-width - максимум пишем когда идем от desktop к mobile (1920px - 320px;)
+$desktop-width: 1920px;  // (приставка max-desktop-width - максимум пишем когда идем от desktop к mobile (1920px - 320px;)
+$tablet-width: 768px;  // (приставка max-tablet-width - максимум пишем когда идем от desktop к mobile (1920px - 320px;)
 
 //RETINA VARIABLES
 $retina-dpi: 144dpi;
@@ -61,9 +62,11 @@ $line-height-23: 23px;
 $line-height-24: 24px;
 $line-height-25: 25px;
 $line-height-27: 27px;
+$line-height-28: 28px;
 $line-height-31: 31px;
 $line-height-32: 32px;
 $line-height-34: 34px;
+$line-height-30: 30px;
 $line-height-36: 36px;
 $line-height-39: 39px;
 $line-height-40: 40px;

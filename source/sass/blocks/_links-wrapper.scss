@@ -1,8 +1,26 @@
 .links-wrapper {
-  display: grid;
-  grid-template-columns: 360px 290px 260px 360px 328px;
-  padding-top: 31px;
-  padding-bottom: 40px;
+  @media (min-width: 1200px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    column-gap: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    padding-top: 31px;
+    padding-bottom: 40px;
+    column-gap: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 360px 290px 260px 360px 328px;
+    padding-top: 31px;
+    padding-bottom: 40px;
+  }
 }
 
 .links-wrapper__list {
@@ -10,6 +28,14 @@
 
   a {
     color: $dark;
+
+    @media (min-width: 1200px) {
+      font-size: 12px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 15px;
+    }
 
     &:hover,
     &:focus {

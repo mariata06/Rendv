@@ -1,11 +1,22 @@
 .aside-news {
-  grid-area: asidenews;
-  width: 300px;
-  margin-right: auto;
-  border-radius: 20px;
-  //border: 1px solid $grey-medium;
-  //border: 1px solid green;
-  align-self: start;
+  margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    grid-area: asidenews;
+  }
+
+  @media (min-width: 1440px) {
+    grid-area: asidenews;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: asidenews;
+    width: 300px;
+    margin-right: auto;
+    margin-bottom: 0;
+    border-radius: 20px;
+    align-self: start;
+  }
 
   ul {
     @include list-reset;
@@ -36,11 +47,25 @@
   }
 
   h3 {
+    @include title($font-20, $line-height-30, $medium);
     margin: 0;
     margin-bottom: 16px;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 500;
+  }
+
+  .aside-news__title--mobile {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  .aside-news__title--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
   }
 
   .aside-news__comment {

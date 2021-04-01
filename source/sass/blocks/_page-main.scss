@@ -1,35 +1,95 @@
 .page-main {
-  /*
-  @media (min-width: $desktop-width) {
+  //grid-template-columns: 320px;
+  //grid-template-areas: "asidenews"
+  //  "news";
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  //min-width: 320px;
+
+  @media (min-width: 1200px) {
     display: grid;
-    grid-template-columns: 310px 353px 353px 420px;
-    grid-template-areas:
-      "articles news news asidenews"
-      ".        news news ."
-      ".        news news ."
-      ".        news news ."
-      ".        pagination pagination .";
-    gap: 30px;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-areas: "search search search"
+      ". title title"
+      "articles news news"
+      "articles news news"
+      //"asidenews asidenews asidenews";
+      "asidenews news news"
+      "asidenews news news";
+    column-gap: 20px;
     padding-top: 30px;
   }
-  */
+
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-areas: ". title title ."
+      "articles news news search"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews";
+    column-gap: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 310px 353px 353px 420px;
     grid-template-areas: ". title title ."
+      "articles news news search"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
+      "articles news news asidenews"
       "articles news news asidenews";
-    gap: 30px;
+    column-gap: 30px;
     padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   h1 {
-    grid-area: title;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 36px;
+    @include title($font-18, $line-height-27, $medium);
     margin: 0;
-    width: 100%;
-    display: block;
-    margin-bottom: 11px;
+    margin-bottom: 20px;
+
+    @media (min-width: 1200px) {
+      @include title($font-28, $line-height-28, $medium);
+      grid-area: title;
+      display: block;
+    }
+
+    @media (min-width: 1440px) {
+      grid-area: title;
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      @include title($font-36, $line-height-36, $medium);
+      grid-area: title;
+      width: 100%;
+      display: block;
+      margin-bottom: 41px;
+    }
   }
 }

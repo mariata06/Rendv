@@ -1,14 +1,28 @@
 .footer-menu {
   @include list-reset;
-  grid-area: menu;
-  display: flex;
-  flex-wrap: wrap;
-  width: 907px;
+  display: none;
+
+  @media (min-width: 1200px) {
+    grid-area: menu;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1440px) {
+    grid-area: menu;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: menu;
+    display: flex;
+    flex-wrap: wrap;
+    width: 907px;
+  }
 
   li {
-    margin-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin: 10px 20px 20px 0;
   }
 
   a {

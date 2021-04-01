@@ -1,29 +1,81 @@
 .navigation {
-  @media (min-width: $desktop-width) {
+  display: grid;
+  grid-template-columns: 115px 185px;
+  grid-template-areas: "logo buttons";
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 0.5px solid $grey-medium;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 1200px) {
+    border-bottom: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-areas: "logo menu buttons";
+  }
+
+  @media (min-width: 1440px) {
     padding-top: 30px;
     padding-bottom: 30px;
-    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-template-columns: 203px 878px 449px;
-    grid-template-areas: "logo menu buttons";
-    align-items: center;
   }
 
   .navigation__button {
-    @media (min-width: $desktop-width) {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
       background-color: $green;
       color: $white;
       padding: 11px 15px;
       border-radius: 5px;
       font-weight: 500;
+      margin-bottom: 20px;
+      margin-left: auto;
+    }
 
-      &:hover,
-      &:focus {
-        background-color: $light-green;
-        color: $green;
+    &:hover,
+    &:focus {
+      background-color: $light-green;
+      color: $green;
 
-        svg {
-          stroke: $green;
-        }
+      svg {
+        stroke: $green;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 30px;
+      margin-bottom: unset;
+      margin-left: 0;
+    }
+
+    &--like {
+      display: block;
+      margin-right: 30px;
+      margin-left: auto;
+
+      @media (min-width: 1200px) {
+        display: none;
+      }
+    }
+
+    &--burger {
+      display: block;
+      padding: 0;
+      border-radius: 0;
+      background-color: transparent;
+      margin-right: 10px;
+
+      @media (min-width: 1200px) {
+        display: none;
       }
     }
   }
@@ -37,30 +89,42 @@
 }
 
 .navigation__logo {
+  margin-left: 10px;
+
+  @media (min-width: 1440px) {
+    margin-left: 0;
+    grid-area: "logo";
+  }
+
   @media (min-width: $desktop-width) {
+    margin-left: 0;
     grid-area: "logo";
   }
 }
 
 .navigation__menu {
-  @media (min-width: $desktop-width) {
+  display: none;
+
+  @media (min-width: 1200px) {
     @include list-reset;
-    grid-area: "menu";
     display: flex;
+    grid-area: "menu";
     flex-wrap: wrap;
     align-items: center;
   }
 
   li {
+    @media (min-width: 1200px) {
+      margin: 10px 10px 10px 0;
+    }
+
     @media (min-width: $desktop-width) {
-      margin-right: 35px;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 20px 35px 20px 0;
     }
   }
 
   a {
-    @media (min-width: $desktop-width) {
+    @media (min-width: 1200px) {
       color: $dark;
       padding: 5px 0;
 
@@ -73,7 +137,17 @@
 }
 
 .navigation__buttons {
-  @media (min-width: $desktop-width) {
-    grid-area: "buttons";
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: "buttons";
+  align-items: center;
+
+  /*
+  @media (min-width: 1440px) {
+    display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }*/
 }

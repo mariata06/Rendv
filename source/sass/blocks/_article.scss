@@ -1,9 +1,23 @@
 .article {
-  background-color: $white;
-  border-radius: 10px;
-  border: 1px solid $grey-medium;
-  width: 353px;
-  margin-bottom: 30px;
+  width: 300px;
+
+  @media (min-width: 1200px) {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+    border-radius: 10px;
+    border: 1px solid $grey-medium;
+    width: 353px;
+    margin-bottom: 30px;
+  }
 
   figure {
     margin: 0;
@@ -23,17 +37,25 @@
   }
 
   figcaption h3 {
+    @include title($font-18, $line-height-27, $medium);
     margin: 0;
     margin-top: 15px;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 500;
     min-height: 81px;
     margin-bottom: 24px;
   }
 
   figcaption time {
     color: $grey;
+  }
+
+  &--vtb,
+  &--centralbank,
+  &--obriver {
+    display: none;
+
+    @media (min-width: 1200px) {
+      display: block;
+    }
   }
 }
 
@@ -51,6 +73,7 @@
   }
 
   figcaption {
+    width: 100%;
     position: absolute;
     bottom: 0;
     height: 100%;
@@ -63,13 +86,16 @@
   }
 
   figcaption h3 {
-    min-height: unset;
-    margin: 0;
+    width: 100%;
     color: $white;
-    font-size: 24px;
-    line-height: 31px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+
+    @media (min-width: $desktop-width) {
+      @include title($font-24, $line-height-31, $medium);
+      min-height: unset;
+      margin: 0;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
   }
 
   figcaption time {

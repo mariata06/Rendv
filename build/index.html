@@ -9,8 +9,6 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin="">
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -48,12 +46,22 @@
           </li>
         </ul>
         <div class="navigation__buttons">
+          <button type="button" class="navigation__button navigation__button--like button">
+            <svg width="18" height="15">
+              <use xlink:href="img/sprite.svg#icon-like"></use>
+            </svg>
+          </button>
           <button type="button" class="navigation__button button">
             <svg class="navigation__button-icon" width="12" height="12">
               <use xlink:href="img/sprite.svg#icon-plus"></use>
             </svg>
             Разместить объявление</button>
           <button type="button" class="navigation__button button">Вход и регистрация</button>
+          <button class="navigation__button navigation__button--burger button">
+            <svg width="18" height="12">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
       </nav>
     </header>
@@ -67,7 +75,7 @@
             <figure>
               <div class="article__picture">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/ice-arena-desktop@1x.webp 1x, img/ice-arena-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/ice-arena-desktop@1x.webp 1x, img/ice-arena-desktop@2x.webp 2x">
                   <source srcset="img/ice-arena-desktop@1x.png 1x, img/ice-arena-desktop@2x.png 2x" media="(min-width: 1440px)">
                   <img src="img/ice-arena-mobile@1x.png" srcset="img/ice-arena-mobile@2x.png 2x" alt="Сквер возле Ледовой арены">
                 </picture>
@@ -85,7 +93,7 @@
             <figure>
               <div class="article__picture">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/mayday-square-desktop@1x.webp 1x, img/mayday-square-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mayday-square-desktop@1x.webp 1x, img/mayday-square-desktop@2x.webp 2x">
                   <source srcset="img/mayday-square-desktop@1x.png 1x, img/mayday-square-desktop@2x.png 2x" media="(min-width: 1440px)">
                   <img src="img/mayday-square-mobile@1x.png" srcset="img/mayday-square-mobile@2x.png 2x" alt="Фото провалившегося тротуара">
                 </picture>
@@ -103,7 +111,7 @@
             <figure>
               <div class="article__picture">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/ecotourism-desktop@1x.webp 1x, img/ecotourism-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/ecotourism-desktop@1x.webp 1x, img/ecotourism-desktop@2x.webp 2x">
                   <source srcset="img/ecotourism-desktop@1x.png 1x, img/ecotourism-desktop@2x.png 2x" media="(min-width: 1440px)">
                   <img src="img/ecotourism-mobile@1x.png" srcset="img/ecotourism-mobile@2x.png 2x" alt="Вебинары об экотуризме">
                 </picture>
@@ -117,11 +125,11 @@
             </figure>
           </article>
 
-          <article class="news__article article">
+          <article class="news__article article article--vtb">
             <figure>
               <div class="article__picture">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/vtb-desktop@1x.webp 1x, img/vtb-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/vtb-desktop@1x.webp 1x, img/vtb-desktop@2x.webp 2x">
                   <source srcset="img/vtb-desktop@1x.png 1x, img/vtb-desktop@2x.png 2x" media="(min-width: 1440px)">
                   <img src="img/vtb-mobile@1x.png" srcset="img/vtb-mobile@2x.png 2x" alt="Новость ВТБ банк">
                 </picture>
@@ -135,11 +143,11 @@
             </figure>
           </article>
 
-          <article class="news__article article">
+          <article class="news__article article article--centralbank">
             <figure>
               <div class="article__picture">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/centralbank-desktop@1x.webp 1x, img/centralbank-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/centralbank-desktop@1x.webp 1x, img/centralbank-desktop@2x.webp 2x">
                   <source srcset="img/centralbank-desktop@1x.png 1x, img/centralbank-desktop@2x.png 2x" media="(min-width: 1440px)">
                   <img src="img/centralbank-mobile@1x.png" srcset="img/centralbank-mobile@2x.png 2x" alt="Новость Центробанка">
                 </picture>
@@ -153,11 +161,11 @@
             </figure>
           </article>
 
-          <article class="news__article article article--wide">
+          <article class="news__article article article--wide article--obriver">
             <figure>
               <div class="article__picture">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/obriver-bridge-desktop@1x.webp 1x, img/obriver-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/obriver-bridge-desktop@1x.webp 1x, img/obriver-bridge-desktop@2x.webp 2x">
                   <source srcset="img/obriver-bridge-desktop@1x.png 1x, img/obriver-bridge-desktop@2x.png 2x" media="(min-width: 1440px)">
                   <img src="img/obriver-bridge-mobile@1x.png" srcset="img/obriver-bridge-mobile@2x.png 2x" alt="Мост реки Обь">
                 </picture>
@@ -198,7 +206,7 @@
       <section class="articles">
         <h3>Статьи</h3>
         <span>Новости Pro.Недвижимость</span>
-        <ul>
+        <ul class="articles__list">
           <li><a href="#">Пресс-релизы</a></li>
           <li><a href="#">Антикризис</a></li>
           <li><a href="#">Новостройки</a></li>
@@ -241,8 +249,8 @@
         </ul>
       </section>
 
-      <section class="aside-news">
-        <form action="https://echo.htmlacademy.ru" class="aside-news__form form form--search">
+      <section class="search">
+        <form action="https://echo.htmlacademy.ru" class="search__form form form--search">
           <button class="form__button button" type="submit">
             <svg width="17" height="18">
               <use xlink:href="img/sprite.svg#icon-search"></use>
@@ -252,8 +260,11 @@
             <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Поиск">
           </label>
         </form>
+      </section>
+
+      <section class="aside-news">
         <div class="aside-news__wrapper">
-          <h3>Популярные новости</h3>
+          <h3><span class="aside-news__title aside-news__title--mobile">Популярное</span><span class="aside-news__title aside-news__title--desktop">Популярные новости</span></h3>
           <ul>
             <li class="aside-news__item">
               <a href="#">ЦБ вынес постановления о штрафах для Альфа-Банка и Тинькофф Банка за нарушения по кредитным
@@ -318,14 +329,21 @@
           </li>
         </ul>
         <ul class="footer-navigation__social social-list">
-          <li>
+          <li class="social-list__item social-list__item--fb">
+            <a href="https://www.facebook.com" aria-label="facebook">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--whatsapp">
             <a href="https://www.whatsapp.com" aria-label="whatsapp">
               <svg width="19" height="19">
                 <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
               </svg>
             </a>
           </li>
-          <li>
+          <li class="social-list__item social-list__item--youtube">
             <a href="https://www.youtube.com" aria-label="youtube">
               <svg width="19" height="13">
                 <use xlink:href="img/sprite.svg#icon-youtube"></use>
@@ -402,8 +420,9 @@
             получена в том числе из публичных и открытых источников, и ни при каких условиях не является рекомендацией
             или публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</p>
           <div class="copyright__copyright">
-            <p>&copy;2020 Rendv.ru Ревизор недвижимости</p>
-            <p>Все права защищены</p>
+            <p class="copyright__paragraph">&copy;2020 Rendv.ru&nbsp;<span>Ревизор недвижимости</span></p>
+            <a href="#">Полная версия</a>
+            <p class="copyright__rights">Все права защищены</p>
           </div>
         </div>
       </div>

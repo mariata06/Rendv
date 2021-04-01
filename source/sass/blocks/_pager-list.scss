@@ -1,13 +1,23 @@
 .pager-list {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  //width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 
-  grid-area: pagination;
+  @media (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 20px;
+    grid-area: pagination;
+  }
 
   ul {
-    @include list-reset;
-    display: flex;
+    display: none;
+
+    @media (min-width: 1440px) {
+      @include list-reset;
+      display: flex;
+    }
   }
 }
 
@@ -36,9 +46,24 @@
   border-radius: 5px;
 }
 
+.pager-list__button--next {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
+
 .pager-list__button--more {
   @include button($font-15, $line-height-21, $medium, $white);
-  margin-left: auto;
-  color: $white;
   background-color: $blue;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  @media (min-width: 1440px) {
+    margin-left: auto;
+    margin-right: 0;
+    width: unset;
+  }
 }

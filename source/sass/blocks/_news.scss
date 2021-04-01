@@ -1,11 +1,44 @@
 .news {
   background-color: $white-grey;
-  grid-area: news;
+  margin-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    grid-area: news;
+  }
+
+  @media (min-width: 1440px) {
+    grid-area: news;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    grid-area: news;
+  }
 }
 
 .news__wrapper {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

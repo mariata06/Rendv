@@ -1,9 +1,21 @@
 .social-list {
   @include list-reset;
-  grid-area: social;
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    grid-area: social;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: social;
+    align-items: center;
+  }
 
   li {
     margin-bottom: 10px;
@@ -18,5 +30,20 @@
         opacity: 0.7;
       }
     }
+  }
+}
+
+.social-list__item--youtube,
+.social-list__item--whatsapp {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.social-list__item--fb {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
