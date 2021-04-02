@@ -1,5 +1,6 @@
 .article {
   width: 300px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 280px;
@@ -65,11 +66,13 @@
 }
 
 .article--wide {
-  width: 100%;
+  //width: 100%;
   border: none;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 740px;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
 
