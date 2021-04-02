@@ -2,6 +2,11 @@
   width: 100%;
   order: -1;
 
+  @media (min-width: $tablet-width) {
+    order: unset;
+    grid-area: search;
+  }
+
   @media (min-width: 1200px) {
     order: unset;
     grid-area: search;

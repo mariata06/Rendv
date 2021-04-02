@@ -1,14 +1,19 @@
 .article {
   width: 300px;
 
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+
   @media (min-width: 1200px) {
     width: 300px;
     margin-bottom: 20px;
   }
 
   @media (min-width: 1440px) {
-    width: 280px;
-    margin-bottom: 20px;
+    width: 300px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,6 +67,19 @@
 .article--wide {
   width: 100%;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 
   .article__comment {
     width: 180px;

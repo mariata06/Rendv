@@ -1,6 +1,6 @@
 .navigation {
   display: grid;
-  grid-template-columns: 115px 185px;
+  grid-template-columns: 6fr 6fr;
   grid-template-areas: "logo buttons";
   align-items: center;
   padding-top: 15px;
@@ -8,6 +8,11 @@
   border-bottom: 0.5px solid $grey-medium;
   padding-left: 10px;
   padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 2fr 10fr;
+    grid-template-areas: "logo buttons";
+  }
 
   @media (min-width: 1200px) {
     border-bottom: none;
@@ -90,6 +95,10 @@
 
 .navigation__logo {
   margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: "logo";
+  }
 
   @media (min-width: 1440px) {
     margin-left: 0;

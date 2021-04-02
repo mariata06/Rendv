@@ -1,14 +1,25 @@
 .page-main {
-  //grid-template-columns: 320px;
-  //grid-template-areas: "asidenews"
-  //  "news";
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  //min-width: 320px;
+  display: grid;
+  grid-template-columns: 12fr;
+  grid-template-areas: "search"
+    "title"
+    "news"
+    "asidenews";
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas: "search search"
+      "title title"
+      "news news"
+      "articles articles"
+      "asidenews asidenews";
+  }
 
   @media (min-width: 1200px) {
     display: grid;
@@ -17,7 +28,6 @@
       ". title title"
       "articles news news"
       "articles news news"
-      //"asidenews asidenews asidenews";
       "asidenews news news"
       "asidenews news news";
     column-gap: 20px;
@@ -26,19 +36,19 @@
 
   @media (min-width: 1440px) {
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
-    grid-template-areas: ". title title ."
-      "articles news news search"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews"
-      "articles news news asidenews";
+    grid-template-columns: 2fr 7fr 3fr;
+    grid-template-areas: ". title title"
+      "articles news search"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews"
+      "articles news asidenews";
     column-gap: 20px;
   }
 
@@ -73,23 +83,32 @@
     margin: 0;
     margin-bottom: 20px;
 
+    @media (min-width: $tablet-width) {
+      grid-area: title;
+      display: block;
+      padding-left: 20px;
+    }
+
     @media (min-width: 1200px) {
       @include title($font-28, $line-height-28, $medium);
       grid-area: title;
       display: block;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-left: 0;
     }
 
     @media (min-width: 1440px) {
+      @include title($font-36, $line-height-36, $medium);
       grid-area: title;
       display: block;
+      margin-bottom: 41px;
     }
 
     @media (min-width: $desktop-width) {
-      @include title($font-36, $line-height-36, $medium);
       grid-area: title;
       width: 100%;
       display: block;
-      margin-bottom: 41px;
     }
   }
 }

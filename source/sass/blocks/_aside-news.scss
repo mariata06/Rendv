@@ -1,6 +1,11 @@
 .aside-news {
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    grid-area: asidenews;
+  }
+
   @media (min-width: 1200px) {
     grid-area: asidenews;
   }

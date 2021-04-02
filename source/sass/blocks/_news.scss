@@ -2,8 +2,15 @@
   background-color: $white-grey;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    grid-area: news;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media (min-width: 1200px) {
     grid-area: news;
+    padding: 0;
   }
 
   @media (min-width: 1440px) {
@@ -19,6 +26,12 @@
 .news__wrapper {
   width: 100%;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
   @media (min-width: 1200px) {
     width: 100%;

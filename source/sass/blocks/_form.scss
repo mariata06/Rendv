@@ -16,6 +16,10 @@
       align-items: center;
     }
 
+    @media (min-width: $tablet-width) {
+      padding: 15px 30px;
+    }
+
     input {
       @include text($font-15, $line-height-18, $regular);
       font-family: "roboto", "Arial", sans-serif;
