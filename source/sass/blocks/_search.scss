@@ -7,20 +7,8 @@
     grid-area: search;
   }
 
-  @media (min-width: 1200px) {
-    order: unset;
-    grid-area: search;
-  }
-
-  @media (min-width: 1440px) {
-    order: unset;
-    grid-area: search;
-  }
-
   @media (min-width: $desktop-width) {
     align-self: start;
-    grid-area: search;
     width: 300px;
-    order: unset;
   }
 }

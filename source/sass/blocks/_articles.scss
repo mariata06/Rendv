@@ -2,7 +2,6 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    //display: block;
     grid-area: articles;
     padding-left: 20px;
     padding-right: 20px;
@@ -22,13 +21,10 @@
 
   @media (min-width: 1440px) {
     display: block;
-    grid-area: articles;
     padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    grid-area: articles;
     padding: 20px;
     border: 1px solid $grey-medium;
     background-color: $white;
@@ -116,6 +112,19 @@
     li {
       @media (min-width: $tablet-width) {
         margin-right: 20px;
+      }
+    }
+
+    &--useful {
+      @media (min-width: $tablet-width) {
+        justify-content: center;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media (min-width: 1200px) {
+        display: block;
       }
     }
   }

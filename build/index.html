@@ -18,6 +18,7 @@
       <nav class="page-header__navigation navigation container">
         <div class="navigation__logo">
           <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
             <source srcset="img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x" media="(min-width: 1440px)">
             <img src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" alt="Лого Rendv">
           </picture>
@@ -46,18 +47,19 @@
           </li>
         </ul>
         <div class="navigation__buttons">
-          <button type="button" class="navigation__button navigation__button--like button">
+          <button type="button" class="navigation__button navigation__button--like button" aria-label="добавить в избранное">
             <svg width="18" height="15">
               <use xlink:href="img/sprite.svg#icon-like"></use>
             </svg>
           </button>
-          <button type="button" class="navigation__button button">
+          <button type="button" class="navigation__button button" aria-label="разместить объявление">
             <svg class="navigation__button-icon" width="12" height="12">
               <use xlink:href="img/sprite.svg#icon-plus"></use>
             </svg>
             Разместить объявление</button>
-          <button type="button" class="navigation__button button">Вход и регистрация</button>
-          <button class="navigation__button navigation__button--burger button">
+          <button type="button" class="navigation__button button" aria-label="Вход и регистрация">Вход и
+            регистрация</button>
+          <button class="navigation__button navigation__button--burger button" aria-label="открыть мобильное меню">
             <svg width="18" height="12">
               <use xlink:href="img/sprite.svg#icon-burger"></use>
             </svg>
@@ -76,8 +78,8 @@
               <div class="article__picture">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/ice-arena-desktop@1x.webp 1x, img/ice-arena-desktop@2x.webp 2x">
-                  <source srcset="img/ice-arena-desktop@1x.png 1x, img/ice-arena-desktop@2x.png 2x" media="(min-width: 1440px)">
-                  <img src="img/ice-arena-mobile@1x.png" srcset="img/ice-arena-mobile@2x.png 2x" alt="Сквер возле Ледовой арены">
+                  <source srcset="img/ice-arena-desktop@1x.png 1x, img/ice-arena-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/ice-arena-mobile@1x.png" src="img/ice-arena-mobile@1x.png" srcset="img/ice-arena-mobile@2x.png 2x" alt="Сквер возле Ледовой арены" loading="lazy" class="lazyload">
                 </picture>
               </div>
               <figcaption>
@@ -94,8 +96,8 @@
               <div class="article__picture">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/mayday-square-desktop@1x.webp 1x, img/mayday-square-desktop@2x.webp 2x">
-                  <source srcset="img/mayday-square-desktop@1x.png 1x, img/mayday-square-desktop@2x.png 2x" media="(min-width: 1440px)">
-                  <img src="img/mayday-square-mobile@1x.png" srcset="img/mayday-square-mobile@2x.png 2x" alt="Фото провалившегося тротуара">
+                  <source srcset="img/mayday-square-desktop@1x.png 1x, img/mayday-square-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/mayday-square-mobile@1x.png" src="img/mayday-square-mobile@1x.png" srcset="img/mayday-square-mobile@2x.png 2x" alt="Фото провалившегося тротуара" loading="lazy" class="lazyload">
                 </picture>
               </div>
               <figcaption>
@@ -111,9 +113,9 @@
             <figure>
               <div class="article__picture">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/ecotourism-desktop@1x.webp 1x, img/ecotourism-desktop@2x.webp 2x">
-                  <source srcset="img/ecotourism-desktop@1x.png 1x, img/ecotourism-desktop@2x.png 2x" media="(min-width: 1440px)">
-                  <img src="img/ecotourism-mobile@1x.png" srcset="img/ecotourism-mobile@2x.png 2x" alt="Вебинары об экотуризме">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/ecotourism-desktop@1x.webp 1x, img/ecotourism-desktop@2x.webp 2x" width="740" hight="250">
+                  <source srcset="img/ecotourism-desktop@1x.png 1x, img/ecotourism-desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img data-src="img/ecotourism-mobile@1x.png" src="img/ecotourism-mobile@1x.png" srcset="img/ecotourism-mobile@2x.png 2x" alt="Вебинары об экотуризме" loading="lazy" class="lazyload">
                 </picture>
               </div>
               <figcaption>
@@ -130,9 +132,8 @@
               <div class="article__picture">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/vtb-desktop@1x.webp 1x, img/vtb-desktop@2x.webp 2x">
-                  <source srcset="img/vtb-desktop@1x.png 1x, img/vtb-desktop@2x.png 2x" media="(min-width: 1440px)">
-                  <!--<img src="img/vtb-mobile@1x.png" srcset="img/vtb-mobile@2x.png 2x" alt="Новость ВТБ банк">-->
-                  <img src="img/vtb-desktop@1x.png" srcset="img/vtb-desktop@2x.png 2x" alt="Новость ВТБ банк">
+                  <source srcset="img/vtb-desktop@1x.png 1x, img/vtb-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/vtb-desktop@1x.png" src="img/vtb-desktop@1x.png" srcset="img/vtb-desktop@2x.png 2x" alt="Новость ВТБ банк" loading="lazy" class="lazyload">
                 </picture>
               </div>
               <figcaption>
@@ -149,10 +150,8 @@
               <div class="article__picture">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/centralbank-desktop@1x.webp 1x, img/centralbank-desktop@2x.webp 2x">
-                  <source srcset="img/centralbank-desktop@1x.png 1x, img/centralbank-desktop@2x.png 2x" media="(min-width: 1440px)">
-                  <img src="img/centralbank-desktop@1x.png" srcset="img/centralbank-desktop@2x.png 2x" alt="Новость Центробанка">
-                  <!--<img src="img/centralbank-mobile@1x.png" srcset="img/centralbank-mobile@2x.png 2x"
-                    alt="Новость Центробанка">-->
+                  <source srcset="img/centralbank-desktop@1x.png 1x, img/centralbank-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/centralbank-desktop@1x.png" src="img/centralbank-desktop@1x.png" srcset="img/centralbank-desktop@2x.png 2x" alt="Новость Центробанка" loading="lazy" class="lazyload">
                 </picture>
               </div>
               <figcaption>
@@ -169,10 +168,8 @@
               <div class="article__picture">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/obriver-bridge-desktop@1x.webp 1x, img/obriver-bridge-desktop@2x.webp 2x">
-                  <source srcset="img/obriver-bridge-desktop@1x.png 1x, img/obriver-bridge-desktop@2x.png 2x" media="(min-width: 1440px)">
-                  <img src="img/obriver-bridge-desktop@1x.png" srcset="img/obriver-bridge-desktop@2x.png 2x" alt="Мост реки Обь">
-                  <!--<img src="img/obriver-bridge-mobile@1x.png" srcset="img/obriver-bridge-mobile@2x.png 2x"
-                    alt="Мост реки Обь">-->
+                  <source srcset="img/obriver-bridge-desktop@1x.png 1x, img/obriver-bridge-desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img data-src="img/obriver-bridge-desktop@1x.png" src="img/obriver-bridge-desktop@1x.png" srcset="img/obriver-bridge-desktop@2x.png 2x" alt="Мост реки Обь" loading="lazy" class="lazyload">
                 </picture>
               </div>
               <figcaption>
@@ -225,7 +222,7 @@
           <li><a href="#">Мнение эксперта</a></li>
           <li><a href="#">Интервью</a></li>
         </ul>
-        <ul>
+        <ul class="articles__list articles__list--useful">
           <li><a href="#">
               <svg class="articles__button-icon" width="16" height="18">
                 <use xlink:href="img/sprite.svg#icon-user"></use>
@@ -256,13 +253,13 @@
 
       <section class="search">
         <form action="https://echo.htmlacademy.ru" class="search__form form form--search">
-          <button class="form__button button" type="submit">
+          <button class="form__button button" type="submit" aria-label="начать поиск">
             <svg width="17" height="18">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
           </button>
           <label for="site-search">
-            <input type="search" id="site-search" name="search" aria-label="Search through site content" placeholder="Поиск">
+            <input type="search" id="site-search" name="search" placeholder="Поиск">
           </label>
         </form>
       </section>
@@ -310,7 +307,7 @@
       <div class="page-footer__navigation footer-navigation container">
         <div class="footer-navigation__logo">
           <picture>
-            <img src="img/footer-logo.png" srcset="img/footer-logo.png 2x" alt="Лого Rendv" width="170" height="44">
+            <img src="img/footer-logo.png" srcset="img/footer-logo.png 2x" alt="Лого Rendv" width="170" height="46">
           </picture>
         </div>
         <ul class="footer-navigation__menu footer-menu">

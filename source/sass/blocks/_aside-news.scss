@@ -6,16 +6,7 @@
     grid-area: asidenews;
   }
 
-  @media (min-width: 1200px) {
-    grid-area: asidenews;
-  }
-
-  @media (min-width: 1440px) {
-    grid-area: asidenews;
-  }
-
   @media (min-width: $desktop-width) {
-    grid-area: asidenews;
     width: 300px;
     margin-right: auto;
     margin-bottom: 0;

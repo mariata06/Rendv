@@ -3,22 +3,16 @@
   grid-template-columns: 6fr 6fr;
   grid-template-areas: "logo buttons";
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
   border-bottom: 0.5px solid $grey-medium;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 15px 10px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 2fr 10fr;
-    grid-template-areas: "logo buttons";
   }
 
   @media (min-width: 1200px) {
     border-bottom: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: grid;
+    padding: 20px 10px;
     grid-template-columns: 2fr 7fr 3fr;
     grid-template-areas: "logo menu buttons";
   }
@@ -102,12 +96,6 @@
 
   @media (min-width: 1440px) {
     margin-left: 0;
-    grid-area: "logo";
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
-    grid-area: "logo";
   }
 }
 
@@ -150,13 +138,4 @@
   flex-wrap: wrap;
   grid-area: "buttons";
   align-items: center;
-
-  /*
-  @media (min-width: 1440px) {
-    display: flex;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }*/
 }

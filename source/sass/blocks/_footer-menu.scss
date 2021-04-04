@@ -8,16 +8,7 @@
     flex-wrap: wrap;
   }
 
-  @media (min-width: 1440px) {
-    grid-area: menu;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   @media (min-width: $desktop-width) {
-    grid-area: menu;
-    display: flex;
-    flex-wrap: wrap;
     width: 907px;
   }
 

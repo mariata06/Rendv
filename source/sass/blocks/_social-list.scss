@@ -12,11 +12,6 @@
     align-items: center;
   }
 
-  @media (min-width: $desktop-width) {
-    grid-area: social;
-    align-items: center;
-  }
-
   li {
     margin-bottom: 10px;
   }

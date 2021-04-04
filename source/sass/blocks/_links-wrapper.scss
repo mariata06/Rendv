@@ -8,18 +8,13 @@
   }
 
   @media (min-width: 1440px) {
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
     padding-top: 31px;
     padding-bottom: 40px;
     column-gap: unset;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: 360px 290px 260px 360px 328px;
-    padding-top: 31px;
-    padding-bottom: 40px;
   }
 }
 

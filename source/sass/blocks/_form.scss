@@ -7,14 +7,8 @@
     border-radius: 10px;
     margin-bottom: 20px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     background-color: $white;
-
-    label {
-      display: flex;
-      align-items: center;
-    }
 
     @media (min-width: $tablet-width) {
       padding: 15px 30px;
