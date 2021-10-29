@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="Description" content="главная новостной сайт о недвижимости">
+  <title>Главная Новости Pro.Недвижимость</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <nav class="page-header__navigation navigation container">
+        <div class="navigation__logo">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/logo-desktop@1x.webp 1x, img/logo-desktop@2x.webp 2x">
+            <source srcset="img/logo-desktop@1x.png 1x, img/logo-desktop@2x.png 2x" media="(min-width: 1440px)">
+            <img src="img/logo-mobile@1x.png" srcset="img/logo-mobile@2x.png 2x" alt="Лого Rendv">
+          </picture>
+        </div>
+        <ul class="navigation__menu">
+          <li>
+            <a href="#">Недвижимость</a>
+          </li>
+          <li>
+            <a href="#">Финансы</a>
+          </li>
+          <li>
+            <a href="#">Рейтинг компаний</a>
+          </li>
+          <li>
+            <a href="#">Брижа услуг</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">Блоги</a>
+          </li>
+          <li>
+            <a href="#">Мнение эксперта</a>
+          </li>
+        </ul>
+        <div class="navigation__buttons">
+          <button type="button" class="navigation__button navigation__button--like button" aria-label="добавить в избранное">
+            <svg width="18" height="15">
+              <use xlink:href="img/sprite.svg#icon-like"></use>
+            </svg>
+          </button>
+          <button type="button" class="navigation__button button" aria-label="разместить объявление">
+            <svg class="navigation__button-icon" width="12" height="12">
+              <use xlink:href="img/sprite.svg#icon-plus"></use>
+            </svg>
+            Разместить объявление</button>
+          <button type="button" class="navigation__button button" aria-label="Вход и регистрация">Вход и
+            регистрация</button>
+          <button class="navigation__button navigation__button--burger button" aria-label="открыть мобильное меню">
+            <svg width="18" height="12">
+              <use xlink:href="img/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main container">
+      <h1>Новости Pro.Недвижимость</h1>
+      <section class="news">
+        <h2 class="visually-hidden">Главные новости</h2>
+        <div class="news__wrapper">
+          <article class="news__article article">
+            <figure>
+              <div class="article__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/ice-arena-desktop@1x.webp 1x, img/ice-arena-desktop@2x.webp 2x">
+                  <source srcset="img/ice-arena-desktop@1x.png 1x, img/ice-arena-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/ice-arena-mobile@1x.png" src="img/ice-arena-mobile@1x.png" srcset="img/ice-arena-mobile@2x.png 2x" alt="Сквер возле Ледовой арены" loading="lazy" class="lazyload">
+                </picture>
+              </div>
+              <figcaption>
+                <p>Новости Pro.Недвижимость</p>
+                <h3>У новой ледовой арены в Новосибирске разобьют сквер</h3>
+                <div class="article__comment comment"><time datetime="2021-03-25 11:25">18 часов
+                    назад</time><span>0</span></div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="news__article article">
+            <figure>
+              <div class="article__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/mayday-square-desktop@1x.webp 1x, img/mayday-square-desktop@2x.webp 2x">
+                  <source srcset="img/mayday-square-desktop@1x.png 1x, img/mayday-square-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/mayday-square-mobile@1x.png" src="img/mayday-square-mobile@1x.png" srcset="img/mayday-square-mobile@2x.png 2x" alt="Фото провалившегося тротуара" loading="lazy" class="lazyload">
+                </picture>
+              </div>
+              <figcaption>
+                <p>Новости Pro.Недвижимость</p>
+                <h3>У Первомайского сквера в Новосибирске провалился тротуар: его чинили 6 месяцев подряд</h3>
+                <div class="article__comment comment"><time datetime="2020-07-25">25 июля 2020 г.</time><span>0</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="news__article article article--wide">
+            <figure>
+              <div class="article__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/ecotourism-desktop@1x.webp 1x, img/ecotourism-desktop@2x.webp 2x">
+                  <source srcset="img/ecotourism-desktop@1x.png 1x, img/ecotourism-desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img data-src="img/ecotourism-mobile@1x.png" src="img/ecotourism-mobile@1x.png" srcset="img/ecotourism-mobile@2x.png 2x" alt="Вебинары об экотуризме" loading="lazy" class="lazyload">
+                </picture>
+              </div>
+              <figcaption>
+                <p>Новости Pro.Недвижимость</p>
+                <h3>В России запустили серию бесплатных вебинаров по экотуризму</h3>
+                <div class="article__comment comment"><time datetime="2020-08-12">12 августа 2020
+                    г.</time><span>0</span></div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="news__article article article--vtb">
+            <figure>
+              <div class="article__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/vtb-desktop@1x.webp 1x, img/vtb-desktop@2x.webp 2x">
+                  <source srcset="img/vtb-desktop@1x.png 1x, img/vtb-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/vtb-desktop@1x.png" src="img/vtb-desktop@1x.png" srcset="img/vtb-desktop@2x.png 2x" alt="Новость ВТБ банк" loading="lazy" class="lazyload">
+                </picture>
+              </div>
+              <figcaption>
+                <p>Новости Pro.Недвижимость</p>
+                <h3>ВТБ снизил до 15 % первоначальный взнос по ипотеке для семей с детьми</h3>
+                <div class="article__comment comment"><time datetime="2021-03-25 11:25">18 часов
+                    назад</time><span>0</span></div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="news__article article article--centralbank">
+            <figure>
+              <div class="article__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/centralbank-desktop@1x.webp 1x, img/centralbank-desktop@2x.webp 2x">
+                  <source srcset="img/centralbank-desktop@1x.png 1x, img/centralbank-desktop@2x.png 2x" media="(min-width: 1200px)">
+                  <img data-src="img/centralbank-desktop@1x.png" src="img/centralbank-desktop@1x.png" srcset="img/centralbank-desktop@2x.png 2x" alt="Новость Центробанка" loading="lazy" class="lazyload">
+                </picture>
+              </div>
+              <figcaption>
+                <p>Новости Pro.Недвижимость</p>
+                <h3>Центробанк порекомендовал банкам и МФО не выселять должников до конца года</h3>
+                <div class="article__comment comment"><time datetime="2020-07-25">25 июля 2020 г.</time><span>0</span>
+                </div>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="news__article article article--wide article--obriver">
+            <figure>
+              <div class="article__picture">
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/obriver-bridge-desktop@1x.webp 1x, img/obriver-bridge-desktop@2x.webp 2x">
+                  <source srcset="img/obriver-bridge-desktop@1x.png 1x, img/obriver-bridge-desktop@2x.png 2x" media="(min-width: 768px)">
+                  <img data-src="img/obriver-bridge-desktop@1x.png" src="img/obriver-bridge-desktop@1x.png" srcset="img/obriver-bridge-desktop@2x.png 2x" alt="Мост реки Обь" loading="lazy" class="lazyload">
+                </picture>
+              </div>
+              <figcaption>
+                <p>Новости Pro.Недвижимость</p>
+                <h3>Основную конструкцию четвертого моста через Обь начнут строить в 2020 году</h3>
+                <div class="article__comment comment"><time datetime="2020-08-12">12 августа 2020
+                    г.</time><span>0</span></div>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <div class="news__pager-list pager-list">
+          <ul>
+            <li class="pager-list__item pager-list__item--current">
+              <a href="#" title="На страницу номер 1">1</a>
+            </li>
+            <li class="pager-list__item">
+              <a href="#" title="На страницу номер 2">2</a>
+            </li>
+            <li class="pager-list__item">
+              <a href="#" title="На страницу номер 3">3</a>
+            </li>
+            <li class="pager-list__item">
+              <a href="#" title="На страницу номер 4">4</a>
+            </li>
+            <li class="pager-list__item">
+              <a href="#" title="На страницу номер 5">5</a>
+            </li>
+          </ul>
+          <a href="#" class="pager-list__button button pager-list__button--next">Cледующая</a>
+          <a href="#" class="pager-list__button button pager-list__button--more">Показать ещё</a>
+        </div>
+      </section>
+
+      <section class="articles">
+        <h3>Статьи</h3>
+        <span>Новости Pro.Недвижимость</span>
+        <ul class="articles__list">
+          <li><a href="#">Пресс-релизы</a></li>
+          <li><a href="#">Антикризис</a></li>
+          <li><a href="#">Новостройки</a></li>
+          <li><a href="#">Вторичка</a></li>
+          <li><a href="#">Загородная</a></li>
+          <li><a href="#">Коммерческая</a></li>
+          <li><a href="#">Аренда</a></li>
+          <li><a href="#">Ипотека</a></li>
+          <li><a href="#">Дизайн и ремонт</a></li>
+          <li><a href="#">Город</a></li>
+          <li><a href="#">Мнение эксперта</a></li>
+          <li><a href="#">Интервью</a></li>
+        </ul>
+        <ul class="articles__list articles__list--useful">
+          <li><a href="#">
+              <svg class="articles__button-icon" width="16" height="18">
+                <use xlink:href="img/sprite.svg#icon-user"></use>
+              </svg>
+              Блог</a></li>
+          <li><a href="#">
+              <svg class="articles__button-icon" width="17" height="18">
+                <use xlink:href="img/sprite.svg#icon-review"></use>
+              </svg>
+              Отзывы</a></li>
+          <li><a href="#">
+              <svg class="articles__button-icon" width="17" height="10">
+                <use xlink:href="img/sprite.svg#icon-rate"></use>
+              </svg>
+              Рейтинг авторов</a></li>
+          <li><a href="#">
+              <svg class="articles__button-icon" width="17" height="18">
+                <use xlink:href="img/sprite.svg#icon-video"></use>
+              </svg>
+              Видео</a></li>
+          <li><a href="#">
+              <svg class="articles__button-icon" width="17" height="17">
+                <use xlink:href="img/sprite.svg#icon-question"></use>
+              </svg>
+              Вопросы</a></li>
+        </ul>
+      </section>
+
+      <section class="search">
+        <h2 class="visually-hidden">Начать поиск по сайту</h2>
+        <form action="https://echo.htmlacademy.ru" class="search__form form form--search">
+          <button class="form__button button" type="submit" aria-label="начать поиск">
+            <svg width="17" height="18">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+          <label for="site-search">
+            <input type="search" id="site-search" name="search" placeholder="Поиск">
+          </label>
+        </form>
+      </section>
+
+      <section class="aside-news">
+        <div class="aside-news__wrapper">
+          <h3><span class="aside-news__title aside-news__title--mobile">Популярное</span><span class="aside-news__title aside-news__title--desktop">Популярные новости</span></h3>
+          <ul>
+            <li class="aside-news__item">
+              <a href="#">ЦБ вынес постановления о штрафах для Альфа-Банка и Тинькофф Банка за нарушения по кредитным
+                историям</a>
+              <div class="aside-news__comment comment"><time datetime="2020-08-22">22.08.2020</time><span>0</span></div>
+            </li>
+            <li class="aside-news__item">
+              <a href="#">Изменения по вкладам за неделю</a>
+              <div class="aside-news__comment comment"><time datetime="2020-08-22">22.08.2020</time><span>0</span></div>
+            </li>
+            <li class="aside-news__item">
+              <a href="#">Банк России определил базовый уровень доходности вкладов на сентябрь</a>
+              <div class="aside-news__comment comment"><time datetime="2020-08-22">22.08.2020</time><span>0</span></div>
+            </li>
+            <li class="aside-news__item">
+              <a href="#">​Почта Банк и ВТБ открывают «Мультикарту сокровищ»</a>
+              <div class="aside-news__comment comment"><time datetime="2020-08-22">22.08.2020</time><span>0</span></div>
+            </li>
+            <li class="aside-news__item">
+              <a href="#">Исследование: большинство россиян открывают вклады для получения дополнительного дохода</a>
+              <div class="aside-news__comment comment"><time datetime="2020-08-22">22.08.2020</time><span>0</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="aside-news__mailing">
+          <h3>Подпишитесь на рассылку</h3>
+          <form action="https://echo.htmlacademy.ru" class="aside-news__form form form--mailing">
+            <label for="site-mailing">
+              <input type="email" id="site-mailing" name="email" aria-label="subscribe to the newsletter" placeholder="Введите Вашу эл. почту">
+            </label>
+            <button class="form__button button" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__navigation footer-navigation container">
+        <div class="footer-navigation__logo">
+          <picture>
+            <img src="img/footer-logo.png" srcset="img/footer-logo.png 2x" alt="Лого Rendv" width="170" height="46">
+          </picture>
+        </div>
+        <ul class="footer-navigation__menu footer-menu">
+          <li>
+            <a href="#">О проекте</a>
+          </li>
+          <li>
+            <a href="#">Реклама</a>
+          </li>
+          <li>
+            <a href="#">Пользовательсоке соглашение</a>
+          </li>
+          <li>
+            <a href="#">Служба поддержки</a>
+          </li>
+          <li>
+            <a href="#">Политика конфиденциальности</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-navigation__social social-list">
+          <li class="social-list__item social-list__item--fb">
+            <a href="https://www.facebook.com" aria-label="facebook">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--whatsapp">
+            <a href="https://www.whatsapp.com" aria-label="whatsapp">
+              <svg width="19" height="19">
+                <use xlink:href="img/sprite.svg#icon-whatsapp"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item social-list__item--youtube">
+            <a href="https://www.youtube.com" aria-label="youtube">
+              <svg width="19" height="13">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" aria-label="instagram">
+              <svg width="19" height="19">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.vkontakte.com" aria-label="vkontakte">
+              <svg width="18" height="10">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__links links">
+        <div class="links__wrapper links-wrapper container">
+          <ul class="links-wrapper__list links-list links-list--news">
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Новости Pro.Недвижимость</a></li>
+            <li><a href="#">Пресс-релизы</a></li>
+            <li><a href="#">Блоги</a></li>
+            <li><a href="#">Мнение эксперта</a></li>
+            <li><a href="#">Интервью</a></li>
+            <li><a href="#">Исследование и аналитика</a></li>
+            <li><a href="#">Видео</a></li>
+          </ul>
+          <ul class="links-wrapper__list links-list links-list--realestate">
+            <li><a href="#">Недвижимость</a></li>
+            <li><a href="#">Апартаменты</a></li>
+            <li><a href="#">Таунхаусы</a></li>
+            <li><a href="#">Коттеджные посёлки</a></li>
+            <li><a href="#">Земельные участки</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Все компании</a></li>
+          </ul>
+          <ul class="links-wrapper__list links-list links-list--review">
+            <li><a href="#">Народный отзыв</a></li>
+            <li><a href="#">Отзыв о компаниях</a></li>
+            <li><a href="#">Народный рейтинг</a></li>
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Опросы</a></li>
+          </ul>
+          <ul class="links-wrapper__list links-list links-list--finance">
+            <li><a href="#">Финансы и право</a></li>
+            <li><a href="#">Ипотека и банки</a></li>
+            <li><a href="#">Страхование</a></li>
+            <li><a href="#">Юристы, оценка и налог</a></li>
+            <li><a href="#">Ипотечный калькулятор</a></li>
+            <li><a href="#">Калькулятор страхования</a></li>
+            <li><a href="#">Законодательство</a></li>
+          </ul>
+          <ul class="links-wrapper__list links-list links-list--housing">
+            <li><a href="#">Всё для дома</a></li>
+            <li><a href="#">Архитектура и дизайн</a></li>
+            <li><a href="#">Строительство и ремонт</a></li>
+            <li><a href="#">Всё для дома, дачи, сада</a></li>
+            <li><a href="#">Полезные советы</a></li>
+            <li><a href="#">Идеи для дома</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <div class="copyright__wrapper container">
+          <p class="copyright__disclaimer">Вся информация на сайте предоставлена исключительно с целью ознакомления,
+            получена в том числе из публичных и открытых источников, и ни при каких условиях не является рекомендацией
+            или публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</p>
+          <div class="copyright__copyright">
+            <p class="copyright__paragraph">&copy;2020 Rendv.ru&nbsp;<span>Ревизор недвижимости</span></p>
+            <a href="#">Полная версия</a>
+            <p class="copyright__rights">Все права защищены</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
